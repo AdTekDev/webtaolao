@@ -1,5 +1,4 @@
 /// Thư viện
-var fs = require('fs');
 var express = require('express');
 var path = require('path');
 
@@ -20,7 +19,7 @@ chay_app.set('view engine', 'ejs');
 chay_app.use(express.static('public'));
 
 // --- Tới HOME
-chay_app.get("/home" , xulyhome);
+chay_app.get("/" , xulyhome);
 function xulyhome (req, res) {
     return res.render('home');
 }
