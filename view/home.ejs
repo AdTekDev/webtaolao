@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <title> Ví dụ Node.js </title>
+    <%- include("./layout/head"); %>
+</head>
+
+<body>
+    <%- include("./layout/header"); %>
+
+    <main role="main">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <H1> Ví dụ HTML - Node.js </H1>
+        <form action="">
+            <input type="number" id="soA" name="soA">
+            <input type="button" value="Kiểm tra số"  onclick="kiemtraso()">
+            <input type="submit" value="Kiểm tra từ SERVER">
+        </form> 
+        <img src="/chipu01.png">
+        </div>
+    </main>
+
+    <%- include("./layout/footer"); %>
+</body>
+
+<script>
+
+function kiemtraso() {
+    if ( document.getElementById("soA").value % 2 == 0)
+        alert(" Số chẵn ! ");
+    else 
+        alert(" Số LẺ ! ");
+}
+
+
+</script>
+
+</html> 

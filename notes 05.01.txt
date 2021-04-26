@@ -1,0 +1,26 @@
+
+    1. Mở thư mục Sẽ Tạo Nodejs / Đã có code 
+        (CMD / hoặc powershell)
+        Tạo Project cho nodejs 
+      
+        npm init -y
+	
+    2. Cài đặt thư viện express
+        npm i  express ejs --save
+    
+    3. Sử dụng thư viện EJS bằng dòng lệnh 
+        /// Engine EJS
+        app.set('views', path.join( __dirname, 'views'));
+        app.set('view engine', 'ejs');
+
+        Sử dụng EJS 
+        res.render
+
+    4. Khai bao cac Folder Tĩnh
+        app.use(express.static('public'));
+
+    5. Sử dụng Tham số gửi từ Client với GET Method 
+        req.query
+
+    6. Chạy lại APP đã code xong / RUN - Server:  
+        node  index.js
