@@ -1,0 +1,80 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ncx:ncx xmlns:aid="http://ns.adobe.com/AdobeInDesign/4.0/" xmlns:aid5="http://ns.adobe.com/AdobeInDesign/5.0/" xmlns:container="urn:oasis:names:tc:opendocument:xmlns:container" xmlns:cp="http://schemas.openxmlformats.org/package/2006/metadata/core-properties" xmlns:db="http://docbook.org/ns/docbook" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcmitype="http://purl.org/dc/dcmitype/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:epub="http://www.idpf.org/2007/ops" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:m="http://www.w3.org/1998/Math/MathML" xmlns:ncx="http://www.daisy.org/z3986/2005/ncx/" xmlns:opf="http://www.idpf.org/2007/opf" xmlns:pub="http://publishingxml.org/ns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2005-1" xml:lang="en-UK">
+<ncx:head>
+<ncx:meta name="dtb:depth" content="1"/>
+<ncx:meta name="dtb:uid" content="9780749497484"/>
+</ncx:head>
+<ncx:docTitle>
+<ncx:text>Agile Transformation</ncx:text>
+</ncx:docTitle>
+<ncx:docAuthor>
+<ncx:text>Neil Perkin</ncx:text>
+</ncx:docAuthor>
+<ncx:navMap>
+<ncx:navPoint id="NavPoint-1" playOrder="1"><ncx:navLabel><ncx:text>01 A new operating system for a new operating environment</ncx:text></ncx:navLabel><ncx:content src="content/04_chapter01.xhtml#ch01_sec_001"/>
+<ncx:navPoint id="NavPoint-2" playOrder="2"><ncx:navLabel><ncx:text>Why this book, and why now?</ncx:text></ncx:navLabel><ncx:content src="content/04_chapter01.xhtml#ch01_h2_001"/></ncx:navPoint>
+<ncx:navPoint id="NavPoint-3" playOrder="3"><ncx:navLabel><ncx:text>The new operating environment</ncx:text></ncx:navLabel><ncx:content src="content/04_chapter01.xhtml#ch01_h2_002"/></ncx:navPoint>
+<ncx:navPoint id="NavPoint-4" playOrder="4"><ncx:navLabel><ncx:text>References</ncx:text></ncx:navLabel><ncx:content src="content/04_chapter01.xhtml#ch01_sec_004"/></ncx:navPoint>
+</ncx:navPoint>
+<ncx:navPoint id="NavPoint-5" playOrder="5"><ncx:navLabel><ncx:text>02 The agile business</ncx:text></ncx:navLabel><ncx:content src="content/05_chapter02.xhtml#ch02_sec_001"/>
+<ncx:navPoint id="NavPoint-6" playOrder="6"><ncx:navLabel><ncx:text>Defining the agile business</ncx:text></ncx:navLabel><ncx:content src="content/05_chapter02.xhtml#ch02_h2_001"/></ncx:navPoint>
+<ncx:navPoint id="NavPoint-7" playOrder="7"><ncx:navLabel><ncx:text>Scaling agile principles</ncx:text></ncx:navLabel><ncx:content src="content/05_chapter02.xhtml#ch02_h2_002"/></ncx:navPoint>
+<ncx:navPoint id="NavPoint-8" playOrder="8"><ncx:navLabel><ncx:text>The key shifts from linear thinking</ncx:text></ncx:navLabel><ncx:content src="content/05_chapter02.xhtml#ch02_h2_003"/></ncx:navPoint>
+<ncx:navPoint id="NavPoint-9" playOrder="9"><ncx:navLabel><ncx:text>Principles of agile business</ncx:text></ncx:navLabel><ncx:content src="content/05_chapter02.xhtml#ch02_h2_004"/></ncx:navPoint>
+<ncx:navPoint id="NavPoint-10" playOrder="10"><ncx:navLabel><ncx:text>The impact of rising customer expectation</ncx:text></ncx:navLabel><ncx:content src="content/05_chapter02.xhtml#ch02_h2_005"/></ncx:navPoint>
+<ncx:navPoint id="NavPoint-11" playOrder="11"><ncx:navLabel><ncx:text>The &#x2018;platformization&#x2019; of capability</ncx:text></ncx:navLabel><ncx:content src="content/05_chapter02.xhtml#ch02_h2_006"/></ncx:navPoint>
+<ncx:navPoint id="NavPoint-12" playOrder="12"><ncx:navLabel><ncx:text>Systems thinking for business</ncx:text></ncx:navLabel><ncx:content src="content/05_chapter02.xhtml#ch02_h2_007"/></ncx:navPoint>
+<ncx:navPoint id="NavPoint-13" playOrder="13"><ncx:navLabel><ncx:text>Genuine (and pretend) customer-centricity</ncx:text></ncx:navLabel><ncx:content src="content/05_chapter02.xhtml#ch02_h2_008"/></ncx:navPoint>
+<ncx:navPoint id="NavPoint-14" playOrder="14"><ncx:navLabel><ncx:text>References</ncx:text></ncx:navLabel><ncx:content src="content/05_chapter02.xhtml#ch02_sec_006"/></ncx:navPoint>
+</ncx:navPoint>
+<ncx:navPoint id="NavPoint-15" playOrder="15"><ncx:navLabel><ncx:text>03 A new agile operating system for business</ncx:text></ncx:navLabel><ncx:content src="content/06_chapter03.xhtml#ch03_sec_001"/>
+<ncx:navPoint id="NavPoint-16" playOrder="16"><ncx:navLabel><ncx:text>The key technology dynamics in companies</ncx:text></ncx:navLabel><ncx:content src="content/06_chapter03.xhtml#ch03_h2_001"/></ncx:navPoint>
+<ncx:navPoint id="NavPoint-17" playOrder="17"><ncx:navLabel><ncx:text>Small teams can drive big change</ncx:text></ncx:navLabel><ncx:content src="content/06_chapter03.xhtml#ch03_h2_002"/></ncx:navPoint>
+<ncx:navPoint id="NavPoint-18" playOrder="18"><ncx:navLabel><ncx:text>Moving away from strict hierarchies</ncx:text></ncx:navLabel><ncx:content src="content/06_chapter03.xhtml#ch03_h2_003"/></ncx:navPoint>
+<ncx:navPoint id="NavPoint-19" playOrder="19"><ncx:navLabel><ncx:text>Changing innovation horizons</ncx:text></ncx:navLabel><ncx:content src="content/06_chapter03.xhtml#ch03_h2_004"/></ncx:navPoint>
+<ncx:navPoint id="NavPoint-20" playOrder="20"><ncx:navLabel><ncx:text>The real challenge with transformation</ncx:text></ncx:navLabel><ncx:content src="content/06_chapter03.xhtml#ch03_h2_005"/></ncx:navPoint>
+<ncx:navPoint id="NavPoint-21" playOrder="21"><ncx:navLabel><ncx:text>The problem with corporate innovation</ncx:text></ncx:navLabel><ncx:content src="content/06_chapter03.xhtml#ch03_h2_006"/></ncx:navPoint>
+<ncx:navPoint id="NavPoint-22" playOrder="22"><ncx:navLabel><ncx:text>Beyond innovation: the need to constantly renew</ncx:text></ncx:navLabel><ncx:content src="content/06_chapter03.xhtml#ch03_h2_007"/></ncx:navPoint>
+<ncx:navPoint id="NavPoint-23" playOrder="23"><ncx:navLabel><ncx:text>The ambidextrous organization</ncx:text></ncx:navLabel><ncx:content src="content/06_chapter03.xhtml#ch03_h2_008"/></ncx:navPoint>
+<ncx:navPoint id="NavPoint-24" playOrder="24"><ncx:navLabel><ncx:text>Shaping demand and fulfilling demand</ncx:text></ncx:navLabel><ncx:content src="content/06_chapter03.xhtml#ch03_h2_009"/></ncx:navPoint>
+<ncx:navPoint id="NavPoint-25" playOrder="25"><ncx:navLabel><ncx:text>From scalable efficiency to scalable learning</ncx:text></ncx:navLabel><ncx:content src="content/06_chapter03.xhtml#ch03_h2_010"/></ncx:navPoint>
+<ncx:navPoint id="NavPoint-26" playOrder="26"><ncx:navLabel><ncx:text>Explore, execute, extend and exploit</ncx:text></ncx:navLabel><ncx:content src="content/06_chapter03.xhtml#ch03_h2_011"/></ncx:navPoint>
+<ncx:navPoint id="NavPoint-27" playOrder="27"><ncx:navLabel><ncx:text>A structure for continuous innovation</ncx:text></ncx:navLabel><ncx:content src="content/06_chapter03.xhtml#ch03_h2_012"/></ncx:navPoint>
+<ncx:navPoint id="NavPoint-28" playOrder="28"><ncx:navLabel><ncx:text>The dual operating system</ncx:text></ncx:navLabel><ncx:content src="content/06_chapter03.xhtml#ch03_h2_013"/></ncx:navPoint>
+<ncx:navPoint id="NavPoint-29" playOrder="29"><ncx:navLabel><ncx:text>Building a service-oriented architecture</ncx:text></ncx:navLabel><ncx:content src="content/06_chapter03.xhtml#ch03_h2_014"/></ncx:navPoint>
+<ncx:navPoint id="NavPoint-30" playOrder="30"><ncx:navLabel><ncx:text>The post-digital organization</ncx:text></ncx:navLabel><ncx:content src="content/06_chapter03.xhtml#ch03_h2_015"/></ncx:navPoint>
+<ncx:navPoint id="NavPoint-31" playOrder="31"><ncx:navLabel><ncx:text>References</ncx:text></ncx:navLabel><ncx:content src="content/06_chapter03.xhtml#ch03_sec_005"/></ncx:navPoint>
+</ncx:navPoint>
+<ncx:navPoint id="NavPoint-32" playOrder="32"><ncx:navLabel><ncx:text>04 Changing change management</ncx:text></ncx:navLabel><ncx:content src="content/07_chapter04.xhtml#ch04_sec_001"/>
+<ncx:navPoint id="NavPoint-33" playOrder="33"><ncx:navLabel><ncx:text>The messy middle of transformation</ncx:text></ncx:navLabel><ncx:content src="content/07_chapter04.xhtml#ch04_h2_001"/></ncx:navPoint>
+<ncx:navPoint id="NavPoint-34" playOrder="34"><ncx:navLabel><ncx:text>The shift away from big-bang, linear change management</ncx:text></ncx:navLabel><ncx:content src="content/07_chapter04.xhtml#ch04_h2_002"/></ncx:navPoint>
+<ncx:navPoint id="NavPoint-35" playOrder="35"><ncx:navLabel><ncx:text>Agile change management</ncx:text></ncx:navLabel><ncx:content src="content/07_chapter04.xhtml#ch04_h2_003"/></ncx:navPoint>
+<ncx:navPoint id="NavPoint-36" playOrder="36"><ncx:navLabel><ncx:text>Agile transformation: the shift towards a &#x2018;think big, start small, scale fast&#x2019; approach to change</ncx:text></ncx:navLabel><ncx:content src="content/07_chapter04.xhtml#ch04_h2_004"/></ncx:navPoint>
+<ncx:navPoint id="NavPoint-37" playOrder="37"><ncx:navLabel><ncx:text>References</ncx:text></ncx:navLabel><ncx:content src="content/07_chapter04.xhtml#ch04_sec_002"/></ncx:navPoint>
+</ncx:navPoint>
+<ncx:navPoint id="NavPoint-38" playOrder="38"><ncx:navLabel><ncx:text>05 Think big</ncx:text></ncx:navLabel><ncx:content src="content/08_chapter05.xhtml#ch05_sec_001"/>
+<ncx:navPoint id="NavPoint-39" playOrder="39"><ncx:navLabel><ncx:text>The key elements of &#x2018;think big&#x2019;</ncx:text></ncx:navLabel><ncx:content src="content/08_chapter05.xhtml#ch05_h2_001"/></ncx:navPoint>
+<ncx:navPoint id="NavPoint-40" playOrder="40"><ncx:navLabel><ncx:text>Visioning &#x2013; setting a compelling direction for change</ncx:text></ncx:navLabel><ncx:content src="content/08_chapter05.xhtml#ch05_h2_002"/></ncx:navPoint>
+<ncx:navPoint id="NavPoint-41" playOrder="41"><ncx:navLabel><ncx:text>Mapping your operating business contexts</ncx:text></ncx:navLabel><ncx:content src="content/08_chapter05.xhtml#ch05_h2_003"/></ncx:navPoint>
+<ncx:navPoint id="NavPoint-42" playOrder="42"><ncx:navLabel><ncx:text>Foundational enablers for change</ncx:text></ncx:navLabel><ncx:content src="content/08_chapter05.xhtml#ch05_h2_004"/></ncx:navPoint>
+<ncx:navPoint id="NavPoint-43" playOrder="43"><ncx:navLabel><ncx:text>References</ncx:text></ncx:navLabel><ncx:content src="content/08_chapter05.xhtml#ch05_sec_006"/></ncx:navPoint>
+</ncx:navPoint>
+<ncx:navPoint id="NavPoint-44" playOrder="44"><ncx:navLabel><ncx:text>06 Start small</ncx:text></ncx:navLabel><ncx:content src="content/09_chapter06.xhtml#ch06_sec_001"/>
+<ncx:navPoint id="NavPoint-45" playOrder="45"><ncx:navLabel><ncx:text>Why start small?</ncx:text></ncx:navLabel><ncx:content src="content/09_chapter06.xhtml#ch06_h2_001"/></ncx:navPoint>
+<ncx:navPoint id="NavPoint-46" playOrder="46"><ncx:navLabel><ncx:text>Achieving ambidexterity</ncx:text></ncx:navLabel><ncx:content src="content/09_chapter06.xhtml#ch06_h2_002"/></ncx:navPoint>
+<ncx:navPoint id="NavPoint-47" playOrder="47"><ncx:navLabel><ncx:text>Defining a new way of working</ncx:text></ncx:navLabel><ncx:content src="content/09_chapter06.xhtml#ch06_h2_003"/></ncx:navPoint>
+<ncx:navPoint id="NavPoint-48" playOrder="48"><ncx:navLabel><ncx:text>The challenges and tensions</ncx:text></ncx:navLabel><ncx:content src="content/09_chapter06.xhtml#ch06_h2_004"/></ncx:navPoint>
+<ncx:navPoint id="NavPoint-49" playOrder="49"><ncx:navLabel><ncx:text>References</ncx:text></ncx:navLabel><ncx:content src="content/09_chapter06.xhtml#ch06_sec_005"/></ncx:navPoint>
+</ncx:navPoint>
+<ncx:navPoint id="NavPoint-50" playOrder="50"><ncx:navLabel><ncx:text>07 Scale fast</ncx:text></ncx:navLabel><ncx:content src="content/10_chapter07.xhtml#ch07_sec_001"/>
+<ncx:navPoint id="NavPoint-51" playOrder="51"><ncx:navLabel><ncx:text>Applying agile principles at scale</ncx:text></ncx:navLabel><ncx:content src="content/10_chapter07.xhtml#ch07_h2_001"/></ncx:navPoint>
+<ncx:navPoint id="NavPoint-52" playOrder="52"><ncx:navLabel><ncx:text>Momentum for change (1): momentum = mass &#x00D7; velocity</ncx:text></ncx:navLabel><ncx:content src="content/10_chapter07.xhtml#ch07_h2_002"/></ncx:navPoint>
+<ncx:navPoint id="NavPoint-53" playOrder="53"><ncx:navLabel><ncx:text>Momentum for change (2): mass = volume &#x00D7; density</ncx:text></ncx:navLabel><ncx:content src="content/10_chapter07.xhtml#ch07_h2_003"/></ncx:navPoint>
+<ncx:navPoint id="NavPoint-54" playOrder="54"><ncx:navLabel><ncx:text>Momentum for change (3): velocity = speed &#x002B; direction</ncx:text></ncx:navLabel><ncx:content src="content/10_chapter07.xhtml#ch07_h2_004"/></ncx:navPoint>
+<ncx:navPoint id="NavPoint-55" playOrder="55"><ncx:navLabel><ncx:text>References</ncx:text></ncx:navLabel><ncx:content src="content/10_chapter07.xhtml#ch07_sec_004"/></ncx:navPoint>
+</ncx:navPoint>
+<ncx:navPoint id="NavPoint-56" playOrder="56"><ncx:navLabel><ncx:text>08 Reinventing the organization</ncx:text></ncx:navLabel><ncx:content src="content/11_chapter08.xhtml#ch08_sec_001"/>
+<ncx:navPoint id="NavPoint-57" playOrder="57"><ncx:navLabel><ncx:text>Designing your new agile operating system</ncx:text></ncx:navLabel><ncx:content src="content/11_chapter08.xhtml#ch08_h2_001"/></ncx:navPoint>
+</ncx:navPoint>
+<ncx:navPoint id="NavPoint-58" playOrder="58"><ncx:navLabel><ncx:text>Index</ncx:text></ncx:navLabel><ncx:content src="content/12_index01.xhtml#index_sec_001"/></ncx:navPoint></ncx:navMap>
+</ncx:ncx>

@@ -1,0 +1,1667 @@
+/* -----------------------------------------------------------------
+KOGAN PAGE EBOOK STYLESHEET
+Copyright © 2018 by Kogan Page. All rights reserved.
+-------------------------------------------------------------------- */
+
+/* ----------- */
+/* -- FONTS -- */
+/* ----------- */
+
+@font-face {
+	font-family: "Lato";
+	font-weight: normal;
+	font-style: normal;
+	src: url(fonts/Lato-Regular.ttf);
+}
+@font-face {
+	font-family: "Lato";
+	font-style: normal;
+	font-weight: bold;
+	src: url(fonts/Lato-Bold.ttf);
+}
+@font-face {
+	font-family: "Lato";
+	font-style: italic;
+	font-weight: bold;
+	src: url(fonts/Lato-BoldItalic.ttf);
+}
+@font-face {
+	font-family: "Lato";
+	font-style: italic;
+	font-weight: normal;
+	src: url(fonts/Lato-Italic.ttf);
+}
+@font-face {
+	font-family: "Noto Serif";
+	font-style: normal;
+	font-weight: normal;
+	src: url(fonts/NotoSerif-Regular.ttf);
+}
+@font-face {
+	font-family: "Noto Serif";
+	font-style: normal;
+	font-weight: bold;
+	src: url(fonts/NotoSerif-Bold.ttf);
+}
+@font-face {
+	font-family: "Noto Serif";
+	font-style: italic;
+	font-weight: bold;
+	src: url(fonts/NotoSerif-BoldItalic.ttf);
+}
+@font-face {
+	font-family: "Noto Serif";
+	font-style: italic;
+	font-weight: normal;
+	src: url(fonts/NotoSerif-Italic.ttf);
+}
+
+/* --------------------------- */
+/* -- GLOBAL ELEMENT STYLES -- */
+/* --------------------------- */
+
+* {
+	/*overflow-x: hidden;*/
+}
+
+a:link, 
+a:visited {
+	color: #3A73B9;
+}
+
+/* URLs should break anywhere */
+span.url-no-link,
+span.url-hyperlink {
+	color: #3A73B9;
+	word-break: break-all;
+}
+
+blockquote {
+	margin: 0.5em 2.0em 0.5em 2.0em;
+}
+
+dl {
+	margin: 0.5em 0 0.5em 1.0em;
+	text-align: left;
+	text-justify: none;
+}
+
+dt {
+	font-family: "Noto Serif", serif;
+	font-size: 1.0em;
+	font-weight: normal;
+	line-height: 1.4;
+	margin-top: 0.5em;
+	margin-left: 0;
+	page-break-after: avoid;
+}
+
+dd {
+	font-family: "Noto Serif", serif;
+	font-size: 1.0em;
+	line-height: 1.4;
+	margin-left: 0;
+}
+
+figure {
+	margin: 1.0em 0.75em 1.0em 0.75em;
+	page-break-before: always;
+	page-break-inside: avoid;
+	text-align: left;
+}
+
+figure img {
+	/*border: 1px solid #3A73B9;*/
+}
+
+@media amzn-mobi7 {
+    figure img { width: 95%; }
+}
+@media amzn-kf8 {
+	figure img { width: 95%; }	
+}
+
+figcaption {
+	page-break-inside: avoid;
+	margin-bottom: 0.25em;
+}
+
+details { display: none; }
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: "Lato", sans-serif;
+	font-size: 1.0em;
+	font-style: normal;
+	font-weight: normal;
+	hyphens: none; -webkit-hyphens: none;
+	line-height: 0.9em;
+	margin: 0 0 0 0;
+	padding-top: 0.1em;
+	padding-bottom: 0.25em;
+	page-break-after: avoid;
+	text-align: left;
+	text-indent: 0;
+}
+
+h1 a:link, h1 a:visited,
+h2 a:link, h2 a:visited,
+h3 a:link, h3 a:visited,
+h4 a:link, h4 a:visited,
+h5 a:link, h5 a:visited,
+h6 a:link, h6 a:visited,
+p.subtitle a:link, p.subtitle a:visited {
+	text-decoration: none;	
+}
+
+img {					
+	max-width: 99%;
+	max-height: 99%;
+}
+
+ol, 
+ul {
+	margin: 0.5em 0 0.5em 1.0em;
+	padding: 0 0 0 1.0em;
+}
+
+li {
+	clear: left;
+	font-size: 1.0em;
+	font-family: "Noto Serif", serif;
+	line-height: 1.4;
+	text-align: left;
+	padding-left: 0.5em;
+	text-indent: -0.5em;
+}
+
+p {
+	font-family: "Noto Serif", serif;
+	font-size: 1.0em;
+	font-style: normal;
+	font-weight: normal;
+	line-height: 1.4;
+	margin: 0 0 0 0;
+	/*text-align: left;*/
+	text-indent: 0;
+}
+
+/* == TABLES == */
+
+table {
+	border-collapse: collapse;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;	
+	margin: 0 0.75em 0em 0.75em;
+	page-break-inside: avoid;
+	table-layout: auto;
+}
+
+table.left td, table.left th { text-align: left; }
+table.center td, table.center th { text-align: center; }
+table.right td, table.right th { text-align: right; }
+
+table.top td, table.top th { vertical-align: top; }
+table.middle td, table.middle th { vertical-align: middle; }
+table.bottom td, table.bottom th { vertical-align: bottom; }
+
+table.shade-even tr:nth-child(even) { background-color: #d9d9d9; }
+table.shade-odd tr:nth-child(odd) { background-color: #d9d9d9; }
+table.no-shade th { background-color: #ffffff; }
+
+table.no-border {
+	border-top: 0;
+	border-bottom: 0;
+}
+
+table p {
+	font-family: "Lato", sans-serif;
+	text-align: inherit;
+}
+
+tr.border td { border-bottom: 1px solid black; }
+tr.no-border td, tr.no-border th { border-bottom: 0; }
+
+tr.shade td { background-color: #d9d9d9; }
+tr.no-shade td, tr.no-shade th { background-color: #ffffff; }
+
+tr.left td, tr.left th { text-align: left; }
+tr.center td, tr.center th { text-align: center; }
+tr.right td, tr.right th { text-align: right; }
+
+tr.top td, tr.top th { vertical-align: top; }
+tr.middle td, tr.middle th { vertical-align: middle; }
+tr.bottom td, tr.bottom th { vertical-align: bottom; }
+
+td, th { text-align: center; }
+td:first-child, th:first-child { text-align: left; }
+td:last-child, th:last-child { padding-right: 0.5em; }
+
+td {
+	padding-left: 0.5em;
+	vertical-align: top;
+}
+
+td.shade { background-color: #d9d9d9!important; }
+td.no-shade, th.no-shade { background-color: #ffffff!important; }
+
+th {
+	border-bottom: 1px solid black;
+	border-top: 1px solid black;
+	background-color: #d9d9d9;
+	font-weight: bold;
+	padding-left: 0.5em;
+	vertical-align: bottom;
+}
+
+td, th {
+	font-size: 0.85em;
+	line-height: 1.2;	
+}
+
+td.left, th.left { text-align: left!important; }
+td.center, th.center { text-align: center!important; }
+td.right, th.right { text-align: right!important; }
+
+td.top, th.top { vertical-align: top!important; }
+td.middle, th.middle { vertical-align: middle!important; }
+td.bottom, th.bottom { vertical-align: bottom!important; }
+
+td.border {
+	border-bottom: 1px solid black!important;
+}
+
+td.no-border, th.no-border {
+	border-bottom: 0!important;
+}
+
+/* ------------------------	*/
+/* -- GLOBAL FONT STYLES -- */
+/* ------------------------	*/
+
+.emphasis {
+	font-style: italic;
+}
+
+.equation-inline {}
+
+.label, .ordinal {
+	font-weight: bold;
+}
+
+.sans { font-family: "Lato"!important; }
+.serif { font-family: "Noto Serif"!important; }
+
+.strong {
+	font-weight: bold;
+}
+
+.strong-emphasis {
+	font-weight: bold;
+	font-style: italic;
+}
+
+.sub {
+	font-size: 0.75em;
+	line-height: 0;			/* prevent creating extra line space with subscript */
+	vertical-align: sub;
+}
+
+.sup,
+.endnote-reference {
+	font-size: 0.75em;
+	line-height: 0;			/* prevent creating extra line space with superscript */
+	vertical-align: super;
+}
+
+.underline {
+	text-decoration: underline;
+}
+.underline2 {
+	text-decoration: underline;
+	text-decoration-style: double;
+}
+
+/* --------------------------------- */
+/* -- GLOBAL ELEMENT.CLASS STYLES -- */
+/* --------------------------------- */
+
+/* -- headings -- */
+
+h1.title {
+	font-size: 1.8em;
+	font-weight: bold;
+	margin-top: 1.11em;	/* = 2rem */
+}
+
+h2.head-a {
+	font-size: 1.5em;
+	font-weight: bold;
+	line-height: 1.0;
+	margin-top: 0.67em;	/* = 1rem */
+}
+
+h3.head-b {
+	font-size: 1.3em;
+	font-style: italic;
+	font-weight: bold;
+	margin-top: 0.77em;	/* = 1rem */
+}
+
+h4.head-c {
+	font-size: 1.2em;
+	margin-top: 0.83em;	/* = 1rem */
+}
+
+p.figure,
+p.table {
+	font-size: 1.2em;
+	margin-top: 0.83em;	/* = 1rem */
+}
+
+p.figure a:link, p.figure a:visited,
+p.table a:link, p.table a:visited {
+	text-decoration: none;
+}
+
+/* head-d is low enough in the hierarchy to be treated as a body paragraph,
+	and epubcheck doesn't allow h7, h8, h9 */
+p.head-d {
+	font-size: 1.0em;
+	font-weight: bold;
+	margin-top: 0.5em;
+}
+
+/* -- lists -- */
+
+/* inside the <nav> <ol>, the <li> elements replace the <p> elements, */
+/* and we suppress list item markers, so the styling happens here. */
+
+li.toc-1,
+li.toc-intro-conc {
+	font-family: "Lato", sans-serif;
+	font-size: 1.2em;
+	font-weight: bold;
+	hyphens: none; -webkit-hyphens: none;
+	line-height: 1.2;
+	margin-top: 0.42em;		/* = 0.5rem */
+	margin-bottom: 0.42em;	/* = 0.5rem */
+	padding-left: 1.67em;	/* = 2rem */
+	text-justify: none;
+	text-indent: 0;
+}
+li.toc-1 .strong {
+	float: left;
+	clear: left;
+	margin-left: -1.67em;	/* = -2rem; */
+}
+li.toc-intro-conc > a {
+	/*margin-left: -2.0rem;*/
+}
+
+/* Don't display A-heads in introduction or conclusion  */
+li.toc-intro-conc ol.toc {
+	display: none;
+}
+
+li.toc-2 {
+	font-family: "Noto Serif", serif;
+	font-size: 1.0em;
+	font-style: normal;
+	font-weight: normal;
+	hyphens: none; -webkit-hyphens: none;
+	line-height: 1.2;
+	padding-left: 1.0em;
+	text-indent: -1.0em;
+	text-justify: none;
+}
+
+span.toc-authors {
+	font-family: "Lato", sans-serif;
+	font-size: 0.92em;	/* = 1.1rem (in li.toc-1, where font-size: 1.2em;) */
+	font-style: italic;
+	font-weight: normal;
+}
+
+li.toc-back,
+li.toc-front {
+	font-family: "Noto Serif", serif;
+	font-style: italic;
+	hyphens: none; -webkit-hyphens: none;
+	line-height: 1.2;
+	padding-left: 3.0em;
+	text-indent: -1.0em;
+	text-justify: none;
+}
+
+li.toc-part {
+	font-family: "Lato", sans-serif;
+	font-size: 1.4em;
+	font-weight: normal;
+	hyphens: none; -webkit-hyphens: none;
+	line-height: 1.2;
+	margin-top: 0.71em;	/* = 1rem */
+	text-justify: none;
+}
+li.toc-part .strong {
+	text-transform: uppercase;
+	margin-right: 0.5em;	/* = 0.7rem */
+}
+li.toc-part .default {
+	display: inline-block;
+}
+
+li.toc-list {
+	hyphens: none; -webkit-hyphens: none;
+	line-height: 1.2;
+	padding-left: 5.0em;
+	text-indent: -5.0em;
+	text-justify: none;
+}
+
+li.toc-list .strong:first-child {
+	font-family: "Lato", sans-serif;
+	text-transform: uppercase;
+}
+
+li.toc-1 a:link, li.toc-1 a:visited, 
+li.toc-2 a:link, li.toc-2 a:visited, 
+li.toc-back a:link, li.toc-back a:visited,
+li.toc-front a:link, li.toc-front a:visited, 
+li.toc-intro-conc a:link, li.toc-intro-conc a:visited, 
+li.toc-part a:link, li.toc-part a:visited, 
+li.toc-list a:link, li.toc-list a:visited {
+	text-decoration: none;
+	color: inherit;
+}
+
+nav.page-list, nav.landmarks {
+	display: none;
+}
+
+nav ol {
+	list-style: none;
+	padding: 0 0 0 0; 
+	margin-left: 0;	
+}
+
+ol.list-number { list-style-type: decimal; }
+ol.list-number-sub { list-style-type: lower-alpha; }
+ol.list-number-sub-sub { list-style-type: lower-roman; }
+
+ol.list-alpha-cap { list-style-type: upper-alpha; }
+ol.list-alpha-cap-sub { list-style-type: upper-alpha; }
+ol.list-alpha-cap-sub-sub { list-style-type: upper-alpha; }
+
+ol.list-alpha-lower { list-style-type: lower-alpha; }
+ol.list-alpha-lower-sub { list-style-type: lower-alpha; }
+ol.list-alpha-lower-sub-sub { list-style-type: lower-alpha; }
+
+ol.list-roman-cap { list-style-type: upper-roman; }
+ol.list-roman-cap-sub { list-style-type: upper-roman; }
+ol.list-roman-cap-sub-sub { list-style-type: upper-roman; }
+
+ol.list-roman-lower { list-style-type: lower-roman; }
+ol.list-roman-lower-sub { list-style-type: lower-roman; }
+ol.list-roman-lower-sub-sub { list-style-type: lower-roman; }
+
+/* legal list numbering has to be hard-coded by the developer. */
+ol.list-legal {
+	list-style-type: none;
+	padding: 0 0 0 0;
+	margin-left: 1em
+} 
+ol.list-legal-sub {
+	list-style-type: none;
+	padding: 0 0 0 0;
+	margin-left: 1.25em;
+}
+
+ol.list-legal-sub-sub {
+	list-style-type: none;
+	padding: 0 0 0 0;
+	margin-left: 2.0em;
+}
+
+ol.list-legal > li,
+ol.list-legal-sub > li,
+ol.list-legal-sub-sub > li {
+	padding: 0 0 0 0;
+}
+
+p.list-legal { padding-left: 1.25em; }
+p.list-legal-sub { padding-left:2.0em; }
+p.list-legal-sub-sub { padding-left: 2.75em; }
+
+p.list-legal-number {
+	float: left;
+	margin-right: 0.25em;
+}
+
+ol.list-legal > li > p.list-legal-number {
+	font-weight: bold;
+}
+
+ol.toc, ol.loi, ol.lot, ol.loa, ol.lov { 				/* TOCs are ordered lists, but don't add numbers */
+	list-style: none; 									/* hanging indent defined on the paragraph style */
+	padding: 0 0 0 0; 
+	margin-left: 0;
+}
+
+ol.toc ol.toc { 
+	margin-top: 0.25em; 
+}
+
+ul.list { 
+	list-style: none; 
+	margin-left: 0;
+	padding: 0 0 0 0;    		/* hanging indent defined on the paragraph style */
+}
+ul.list li {
+	padding-left: 0;
+	text-indent: 0;
+}
+
+ul.list-bullet { list-style-type: disc; }
+ul.list-bullet-sub { list-style-type: circle; }
+ul.list-bullet-sub-sub { list-style-type: square; }
+
+/* lists with hanging indent & marker defined on the paragraph style */
+ul.list-dash { list-style: none; padding: 0 0 0 0; } 	
+ul.list-dash-sub { list-style: none; padding: 0 0 0 0; }
+ul.list-dash-sub-sub { list-style: none; padding: 0 0 0 0; }
+
+ul.list-tick { list-style: none; padding: 0 0 0 0; }
+ul.list-tick-sub { list-style: none; padding: 0 0 0 0; }
+ul.list-tick-sub-sub { list-style: none; padding: 0 0 0 0; }
+
+/* definition lists. When nobreak, display as though a two-column table. */
+
+dl.list-definition {}
+
+dl.list-term {
+	margin: 0.5em 0 0.5em 0;	
+}
+
+dt.nobreak:first-child {
+	margin-top: 0;
+}
+
+dt.nobreak {
+	display: inline-block;
+	float: left;
+	clear: left;
+	padding-right: 0.5em;
+}
+
+dt.nobreak + dd {
+	margin-top: 0.5em;
+}
+
+dl.list-term dt.nobreak {
+	width: 4.5em;
+}
+
+dl.list-term dd {
+	margin-left: 5.0em;
+}
+
+/* -- paragraphs -- */
+
+p.authors {
+	font-style: italic;
+	line-height: 1.25;	/* needed to avoid clipping descenders */
+}
+
+p.edition {
+	line-height: 1.25;
+}
+
+p.block,
+p.block-equation {
+	margin-bottom: 0.5em;
+	margin-left: 3.0em;
+	margin-right: 3.0em;
+	margin-top: 0.5em;	
+}
+
+p.block-quote {
+	font-size: 0.9em;
+	/* left and right margin carried by the blockquote style */
+	margin-bottom: 0.56em;	/* = 0.5rem */
+	margin-top: 0.56em;		/* = 0.5rem */
+}
+
+p.copyright {
+	font-size: 0.75em;
+}
+
+p.copyright-head {
+	font-size: 0.75em;
+	font-weight: bold;
+	margin-top: 1.00em;	/* = 0.75rem */
+}
+
+p.copyright-break {
+	font-size: 0.75em;
+	margin-top: 1.00em;	/* = 0.75rem */
+}
+
+p.dedication {
+	font-size: 1.2em;
+	font-style: italic;
+	margin-bottom: 1.00em;	/* = 1.2rem */
+	margin-left: 2.50em;	/* = 3rem */
+	margin-right: 2.50em;	/* = 3rem */
+	margin-top: 1.00em;		/* = 1.2rem */
+	text-align: center;
+	hyphens: none; -webkit-hyphens: none;
+}
+
+p.dialogue-title {
+	font-family: "Lato", sans-serif;
+	font-weight: bold;
+	margin-top: 1.0em;
+	page-break-after: avoid;
+}
+
+p.dialogue-1 {
+	margin-top: 0.5em;
+	padding-left: 1.0em;
+	text-indent: -1.0em;
+}
+
+p.dialogue-1 .strong:first-child {
+	font-family: "Lato", sans-serif;
+	font-size: 0.95em;
+	font-style: italic;
+	font-weight: normal;
+}
+
+p.dialogue-2 {
+	margin-left: 1.0em;
+	text-indent: 1.0em;
+}
+
+p.dialogue-break {
+	margin-left: 1.0em;
+	margin-top: 0.5em;
+}
+
+p.endnote-text {
+	font-size: 0.9em;
+	margin-top: 0.56em;		/* = 0.5rem */
+	padding-left: 1.11em;	/* = 1rem */
+	text-indent: -1.11em;	/* = -1rem */
+}
+
+p.endorsement {
+	font-family: "Lato", sans-serif;
+	font-weight: normal;
+	font-style: normal;
+	margin-top: 1.0em;
+}
+
+p.endorsement-credits {
+	font-family: "Lato", sans-serif;
+	font-weight: bold;
+}
+
+p.epigraph {
+	font-style: italic;
+	margin-top: 1.0em;
+	margin-left: 2.0em;
+	margin-right: 2.0em;
+}
+
+p.epigraph-credits {
+	margin-top: 0.0em;
+	margin-left: 2.0em;
+	margin-right: 2.0em;
+	margin-bottom: 1.0em;
+}
+
+p.figure-alt-long,
+p.table-alt-long {
+	font-size: 0.9em;
+	margin-left: 0.75em;
+	margin-right: 0.75em;
+}
+
+p.figure-credits,
+p.table-credits {
+	font-family: "Lato", sans-serif;
+	font-size: 0.85em;
+	margin-top: 0.5em;
+	margin-left: 0.75em;
+}
+
+p.figure-media,
+p.table-media {
+}
+
+p.figure-note,
+p.table-note {
+	font-family: "Lato", sans-serif;
+	font-size: 0.85em;
+	margin-top: 0.588em;
+	margin-left: 0.882em;
+	margin-right: 0.882em;
+}
+
+p.table-head {
+	font-weight: bold;
+	font-family: "Lato", sans-serif;
+	margin-top: 0.5em;
+}
+
+p.table-subhead {
+	font-weight: bold;
+	font-size: .8em;
+	text-transform: uppercase;
+}
+
+p.table-text {
+	margin-top: 0;
+}
+
+p.table-text-1 {
+	margin-top: 0em;
+	margin-left: 1em;
+}
+
+p.index-alpha {
+	font-size: 0.9em;
+	margin-top: 1.11em;		/* = 1rem */
+	padding-left: 2.22em;	/* = 2rem */
+	text-indent: -2.22em;	/* = -2rem */
+}
+
+p.index-1 {
+	font-size: 0.9em;
+	padding-left: 4.44em;	/* = 4rem */
+	text-indent: -4.44em;	/* = 4rem */
+}
+
+p.index-2 {
+	font-size: 0.9em;
+	padding-left: 4.44em;	/* = 4rem */
+	text-indent: -3.33em;	/* = -3rem */
+}
+
+p.index-3 {
+	font-size: 0.9em;
+	padding-left: 4.44em;	/* = 4rem */
+	text-indent: -2.22em;	/* = -2rem */
+}
+
+p.index-4 {
+	font-size: 0.9em;
+	padding-left: 4.44em;	/* = 4rem */
+	text-indent: -1.11em;	/* = -1rem */
+}
+
+p.list {					/* hanging indent needed in the absence of a list-item marker. */
+	padding-left: 1.0em;
+	text-indent: -1.0em;
+}
+
+p.list-bullet {}			/* formatting done by the list */
+p.list-number {}			/* formatting done by the list */
+p.list-number-2 {}			/* formatting done by the list */
+
+p.list-dash,
+p.list-dash-sub,
+p.list-dash-sub-sub,
+p.list-tick,
+p.list-tick-sub,
+p.list-tick-sub-sub,
+p.list-hyphen {				/* hanging indent needed in the absence of a list-item marker. */
+	padding-left: 1.0em;
+	text-indent: -1.0em;
+}
+
+p.list-hyphen::before {		/* CSS doesn't offer 'hyphen' as a list marker option. Use en-dash because */
+	content: "-";			/* an en dash is 0.5em wide. 	with padding it totals 1.0em wide. */
+	padding-right: 0.5em;	/* padding adds 0.5em 			(to match the p text-indent) */
+}
+
+p.list-dash::before,
+p.list-dash-sub::before,
+p.list-dash-sub-sub::before {	/* en-dash as marker */
+	content: '–';
+	padding-right: 0.5em;
+}
+
+p.list-tick::before,
+p.list-tick-sub::before,
+p.list-tick-sub-sub::before { 	/* checkmark as marker */
+	content: '✓';
+	padding-right: 0.5em;
+}
+
+p.number {
+	font-size: 2.5em;
+	font-weight: normal;
+}
+
+p.number a:link, p.number a:visited {
+	text-decoration: none;
+}
+
+p.poetry-title {
+	font-weight: bold;
+	margin-top: 1.0em;
+	margin-left: 2.0em;
+	margin-right: 2.0em;
+	margin-bottom: 1.0em;
+	page-break-after: avoid;
+}
+
+p.poetry-1 {
+	margin-right: 2.0em;
+	padding-left: 4.0em;
+	text-indent: -2.0em;
+}
+
+p.poetry-1-break {
+	margin-top: 1.0em;
+	margin-right: 2.0em;
+	padding-left: 4.0em;
+	text-indent: -2.0em;
+}
+
+p.poetry-2 {
+	margin-right: 2.0em;
+	padding-left: 4.0em;
+	text-indent: -1.0em;
+}
+
+p.poetry-2-break {
+	margin-top: 1.0em;
+	margin-right: 2.0em;
+	padding-left: 4.0em;
+	text-indent: -1.0em;
+}
+
+p.poetry-credits {
+	font-style: italic;
+	margin-top: 1.0em;
+	margin-left: 6.0em;
+}
+
+p.signature {
+	margin-top: 0.5em;
+	text-align: right;
+}
+
+p.source {
+	font-size: 0.85em;
+	margin-top: 0.59em;	/* = 0.5rem */
+}
+
+p.subtitle {
+	font-size: 1.5em;
+	font-family: "Lato", sans-serif;
+	hyphens: none; -webkit-hyphens: none;
+	line-height: 1.0em;
+	margin-bottom: 0.60em;	/* = 0.9rem */
+	page-break-after: avoid;
+}
+
+p.text {
+	text-indent: 1.0em;
+}
+
+p.text-fo {
+	margin-top: 0.5em;
+}
+
+p.text-break {
+	margin-top: 1.0em;
+	text-indent: 0;
+}
+
+/* -- LAYOUT STYLES -- */
+
+/* -- cols -- */
+div.cols {}
+div.col {
+	margin-top: 0.5em;		/* space above is a reasonable proxy for multiple columns in ebooks */
+}
+
+/* ------------------------- */
+/* -- BOOK SECTION STYLES -- */
+/* ------------------------- */
+
+/* -- cover -- */
+section.cover {
+	text-align: center;
+	padding: 0;
+	margin: 0;
+}
+
+/* -- halftitle -- */
+section.halftitle { 
+	margin: 3em; 
+	page-break-before: always;
+	text-align: center;
+}
+
+section.halftitle h1.title {
+	font-size: 2.5em;
+	text-align: center;
+}
+
+/* -- titlepage -- */
+section.titlepage { 
+	page-break-before: always;
+}
+
+section.titlepage h1.title {
+	font-size: 2.5em;
+	text-align: center;
+}
+
+section.titlepage p.subtitle {
+	font-size: 1.5em;
+	text-align: center;
+}
+
+section.titlepage p.authors {
+	font-size: 1.8em;
+	margin-top: 1.39em;	/* = 2.5rem */
+	text-align: center;
+}
+
+section.titlepage p.publisher {
+	margin-top: 2.5em;
+	text-align: center;
+}
+
+section.titlepage p.publisher img {
+	height: 5.0em;
+}
+
+section.titlepage p.edition {
+	font-size: 1.6em;
+	margin-top: 0.94em;	/* = 1.5rem */
+	text-align: center;
+}
+
+/* -- endorsements -- */
+section.endorsements {
+	page-break-before: always;	
+}
+
+section.endorsements h1.title {
+	text-transform: uppercase;
+	font-size: 1.5em;
+	line-height: 0.8;
+	margin-bottom: 1.00em;	/* = 1.5rem */
+}
+
+/* -- seriespage -- */
+section.seriespage {
+	page-break-before: always;
+}
+
+section.seriespage h1.title {
+	font-weight: normal;
+	margin-bottom: 1.00em;	/* = 1.5rem */
+}
+
+section.seriespage .strong {
+	font-family: "Lato", sans-serif;
+}
+
+/* -- copyright -- */
+section.copyright {
+	page-break-before: always;
+}
+
+section.copyright p {
+	font-family: "Lato", sans-serif;
+}
+
+/* -- publishers-note -- */
+section.publishers-note {
+	border: 1px solid black;
+	padding: 1.0em;
+	margin-bottom: 1.0em;
+}
+
+/* -- cip -- */
+section.cip p.copyright-head {
+	padding-top: 0.5em;
+	/*border-top: 2px solid black;*/
+}
+
+/* -- supplier-details -- */
+section.supplier-details {
+	display: none;
+/*	margin-top: 1.0em;
+	border-top: 1px solid black;
+	padding-top: 0.5em;*/
+}
+
+/* -- dedication -- */
+section.dedication {
+	page-break-before: always;
+}
+
+/* -- toc, loi, lot, loa, lov -- */
+section.toc, 
+section.loi, 
+section.lot, 
+section.loa, 
+section.lov {
+	page-break-before: always;
+}
+
+/* no page break when a toc etc. section occurs immediately after a header (e.g., section title) */
+header + section.toc, 
+header + section.loi, 
+header + section.lot, 
+header + section.loa, 
+header + section.lov {
+	page-break-before: avoid;
+}
+
+section.toc h1.title, 
+section.loi h1.title, 
+section.lot h1.title, 
+section.loa h1.title, 
+section.lov h1.title {
+	color: #3A73B9;
+	font-size: 1.5em;
+	line-height: 0.8;
+	margin-bottom: 1.00em;	/* = 1.5rem */
+	text-transform: uppercase;
+}
+
+/* -- about-the-author -- */
+section.about-the-author {
+	page-break-before: always;
+}
+
+section.about-the-author h1.title {
+	color: #3A73B9;
+	font-size: 1.5em;
+	line-height: 0.8;
+	margin-bottom: 1.00em;	/* = 1.5rem */
+	text-transform: uppercase;
+}
+
+/* -- preface -- */
+section.preface {
+	page-break-before: always;
+}
+
+section.preface h1.title {
+	color: #3A73B9;
+	font-size: 1.5em;
+	line-height: 0.8;
+	margin-bottom: 1.00em;	/* = 1.5rem */
+	text-transform: uppercase;
+}
+
+/* -- foreword -- */
+section.foreword {
+	page-break-before: always;
+}
+
+section.foreword h1.title {
+	color: #3A73B9;
+	font-size: 1.5em;
+	line-height: 0.8;
+	margin-bottom: 1.00em;	/* = 1.5rem */
+	text-transform: uppercase;
+}
+
+/* -- acknowledgements -- */
+section.acknowledgements {
+	page-break-before: always;
+}
+
+section.acknowledgements h1.title {
+	color: #3A73B9;
+	font-size: 1.5em;
+	line-height: 0.8;
+	margin-bottom: 1.00em;	/* = 1.5rem */
+	text-transform: uppercase;
+}
+
+/* -- chronology -- */
+section.chronology {
+	page-break-before: always;
+}
+
+section.chronology h1.title {
+	color: #3A73B9;
+	font-size: 1.5em;
+	line-height: 0.8;
+	margin-bottom: 1.00em;	/* = 1.5rem */
+	text-transform: uppercase;
+}
+
+/* -- contributors -- */
+section.contributors {
+	page-break-before: always;
+}
+
+section.contributors h1.title {
+	color: #3A73B9;
+	font-size: 1.5em;
+	line-height: 0.8;
+	margin-bottom: 1.00em;	/* = 1.5rem */
+	text-transform: uppercase;
+}
+
+/* -- abbreviations -- */
+section.abbreviations {
+	page-break-before: always;
+}
+
+section.abbreviations h1.title {
+	color: #3A73B9;
+	font-size: 1.5em;
+	line-height: 0.8;
+	margin-bottom: 1.00em;	/* = 1.5rem */
+	text-transform: uppercase;
+}
+
+/* -- frontmatter (other) -- */
+section.frontmatter,
+section.endmatter {
+	page-break-before: always;
+}
+
+section.frontmatter h1.title,
+section.endmatter h1.title {
+	color: #3A73B9;
+	font-size: 1.5em;
+	line-height: 0.8;
+	margin-bottom: 1.00em;	/* = 1.5rem */
+	text-transform: uppercase;
+}
+
+/* -- part -- */
+section.part {
+	page-break-before: always;
+}
+
+section.part p.number {
+	font-family: "Lato", sans-serif;
+	font-size: 2.8em;
+	letter-spacing: 0.02em;	/* = 0.05rem */
+	line-height: 0.9;
+	margin: 0 0 0 0;
+}
+
+section.part p.number span.label,
+section.part p.number span.ordinal {
+	font-weight: normal;
+	text-transform: uppercase;
+}
+
+/* use the full path to the title so as not to apply to nested section titles */
+section.part > header > h1.title,
+section.part > h1.title {				/* Kindle removes the header element */
+	font-size: 2.8em;
+	letter-spacing: 0.02em;	/* = 0.05rem */
+	line-height: 0.9;
+	margin: 0 1.00em 0 0;	/* = 0 2.8rem 0 0 */
+	color: #3A73B9;
+}
+
+/* -- introduction and conclusion -- */
+section.intro,
+section.conclusion {
+	page-break-before: always;
+}
+
+section.intro > header, 
+section.conclusion > header {
+	margin-bottom: 1.5em;
+}
+
+/* use the full path to the title so as not to apply to nested section titles */
+section.intro > header > h1.title,
+section.conclusion > header > h1.title,
+section.intro > h1.title,
+section.conclusion > h1.title {
+	color: #3A73B9;
+	font-size: 2.8em;
+	letter-spacing: 0.02em;	/* = 0.05rem */
+}
+
+section.intro > header > p.subtitle,
+section.conclusion > header > p.subtitle,
+section.intro > p.subtitle,
+section.conclusion > p.subtitle {
+	font-size: 2.1em;
+	font-style: italic;
+	font-weight: normal;
+}
+
+/* -- chapter -- */
+section.chapter {
+	page-break-before: always;
+}
+
+section.chapter > header {
+	margin-bottom: 1.5em;
+}
+
+/* use the full path to the title so as not to apply to nested section titles */
+section.chapter > header > h1.title,
+section.chapter > h1.title {	/* Kindle removes the header element */
+	font-size: 2.8em;
+	letter-spacing: 0.02em;	/* = 0.05rem */
+	margin-top: 0;
+	color: #3A73B9;
+}
+
+section.chapter p.number {
+	font-family: "Lato", sans-serif;
+	font-size: 2.5em;
+	margin-top: 0.80em;	/* = 2rem */
+}
+
+section.chapter p.number span.ordinal {
+	font-weight: normal;
+}
+
+section.chapter p.subtitle {
+	font-size: 2.1em;
+	font-style: italic;
+	font-weight: normal;
+}
+
+/* -- chapter authors -- */
+section.chapter section.authors h4.head-c {
+	font-family: sans-serif;
+	font-size: 0.95em;
+	font-weight: bold;
+}
+
+section.chapter section.authors p {
+	font-family: sans-serif;
+	font-size: 0.95em;
+}
+
+/* -- answers -- */
+section.answers {
+	page-break-before: always;
+}
+
+section.answers h1.title {
+	color: #3A73B9;
+	font-size: 1.5em;
+	line-height: 0.8;
+	margin-bottom: 1.00em;	/* = 1.5rem */
+	text-transform: uppercase;
+}
+
+section.answers h2.head-a {
+	font-size: 1.2em;
+	font-weight: normal;
+}
+
+/* -- appendix -- */
+section.appendix {
+	page-break-before: always;
+}
+
+section.appendix h1.title {
+	color: #3A73B9;
+	font-size: 1.5em;
+	margin-bottom: 1.00em;	/* = 1.5rem */
+	text-transform: uppercase;
+}
+
+/* -- references -- */
+section.references {
+	page-break-before: always;
+}
+
+section.references h1.title {
+	font-size: 1.5em;
+	margin-bottom: 1.00em;	/* = 1.5rem */
+	text-transform: uppercase;
+}
+
+/* references at the end of the chapter */
+
+section.chapter-endnotes,
+section.chapter-references {
+	page-break-before: none;
+	margin: 1.0em 0 1.0em 0;
+}
+
+section.chapter-endnotes h1.title,
+section.chapter-references h1.title {
+	font-size: 1.5em;
+	margin-bottom: 0.67em;	/* = 1rem */
+	margin-top: 0.67em;		/* = 1rem */
+	text-transform: none;
+}
+
+section.chapter-endnotes p,
+section.chapter-references p {
+	font-size: 0.9em;
+}
+
+
+/* -- epilogue -- */
+section.epilogue {}
+section.epilogue h1.title {
+	color: #3A73B9;
+	font-size: 1.5em;
+	margin-bottom: 1.00em;	/* = 1.5rem */
+	text-transform: uppercase;
+}
+
+/* -- glossary -- */
+section.glossary {
+	page-break-before: always;
+}
+
+section.glossary h1.title {
+	color: #3A73B9;
+	font-size: 1.5em;
+	margin-bottom: 1.00em;	/* = 1.5rem */
+	text-transform: uppercase;
+}
+
+section.glossary dl {
+	margin: 1.0em 0 1.0em 0;
+}
+
+/* -- index -- */
+section.index {
+	page-break-before: always;
+}
+
+section.index h1.title {
+	color: #3A73B9;
+	font-size: 1.5em;
+	margin-bottom: 1.00em;	/* = 1.5rem */
+	text-transform: uppercase;
+}
+
+/* ----------------- */
+/* -- CHAPTER END -- */
+/* ----------------- */
+
+/* -- endnotes -- */
+section.endnotes {
+	margin: 2.0em 0 2.0em 0;
+}
+
+/* in the endnotes section, endnote references should not be superscript. */
+section.endnotes .endnote-reference {
+	vertical-align: baseline;
+	font-size: 1.0em;
+}
+
+section.endnotes h1.title { 
+	font-size: 1.5em; 
+	margin-bottom: 0.67em;	/* = 1rem */
+	margin-top: 0.67em;		/* = 1rem */
+}
+
+section.endnotes p {
+	font-size: 0.9em
+}
+
+/* ------------------------ */
+/* -- BOX SECTION STYLES -- */
+/* ------------------------ */
+
+section.box,
+section.checklist,
+section.example,
+section.exercise,
+section.key-points,
+section.lessons,
+section.objectives,
+section.tint,
+section.tip {
+	border: 1px solid #3A73B9;
+	border-radius: 1.0em;
+	margin: 2.0em 0 2.0em 0;
+	padding: 1.0em;
+	page-break-inside: avoid;
+}
+
+section.box p,
+section.checklist p,
+section.example p,
+section.exercise p,
+section.key-points p,
+section.lessons p,
+section.objectives p,
+section.tint p,
+section.tip p { 
+	font-family: "Lato", sans-serif;
+	font-size: 0.90em; 
+}
+
+section.box p.block-quote,
+section.checklist p.block-quote,
+section.example p.block-quote,
+section.exercise p.block-quote,
+section.key-points p.block-quote,
+section.lessons p.block-quote,
+section.objectives p.block-quote,
+section.tint p.block-quote,
+section.tip p.block-quote {
+	font-size: 0.85em;
+}
+
+section.box p.source,
+section.checklist p.source,
+section.example p.source,
+section.exercise p.source,
+section.key p.source,
+section.lessons p.source,
+section.objectives p.source,
+section.tint p.source,
+section.tip p.source {
+	font-size: 0.85em;
+}
+
+section.box h1.title,
+section.checklist h1.title,
+section.example h1.title,
+section.exercise h1.title,
+section.key-points h1.title,
+section.lessons h1.title,
+section.objectives h1.title,
+section.tint h1.title,
+section.tip h1.title { 
+	font-size: 1.2em; 
+	font-weight: normal;
+	margin-top: 0;
+}
+
+section.box p.subtitle,
+section.checklist p.subtitle,
+section.example p.subtitle,
+section.exercise p.subtitle,
+section.key-points p.subtitle,
+section.lessons p.subtitle,
+section.objectives p.subtitle,
+section.tint p.subtitle,
+section.tip p.subtitle { 
+	font-size: 1.2em; 
+	font-weight: normal;
+	margin-top: 0;
+}
+
+section.box h2.head-a,
+section.checklist h2.head-a,
+section.example h2.head-a,
+section.exercise h2.head-a,
+section.key-points h2.head-a,
+section.lessons h2.head-a,
+section.objectives h2.head-a,
+section.tint h2.head-a,
+section.tip h2.head-a {
+	font-size: 1.1em;
+	margin-top: 1.00em;	/* = 1.1rem */
+}
+
+section.box h3.head-b,
+section.checklist h3.head-b,
+section.example h3.head-b,
+section.exercise h3.head-b,
+section.key-points h3.head-b,
+section.lessons h3.head-b,
+section.objectives h3.head-b,
+section.tint h3.head-b,
+section.tip h3.head-b {
+	font-size: 1.1em;
+	margin-top: 1.00em;	/* = 1.1rem */
+}
+
+section.box h4.head-c,
+section.checklist h4.head-c,
+section.example h4.head-c,
+section.exercise h4.head-c,
+section.key-points h4.head-c,
+section.lessons h4.head-c,
+section.objectives h4.head-c,
+section.tint h4.head-c,
+section.tip h4.head-c {
+	font-size: 1.1em;
+	margin-top: 1.00em;	/* = 1.1rem */
+}
+
+section.box p.head-d,
+section.checklist p.head-d,
+section.example p.head-d,
+section.exercise p.head-d,
+section.key-points p.head-d,
+section.lessons p.head-d,
+section.objectives p.head-d,
+section.tint p.head-d,
+section.tip p.head-d {
+	font-size: 0.9em;
+	font-weight: bold;
+	margin-top: 1.00em;	/* = 0.9rem */
+}
+
+
+section.tint,
+section.tip {
+	background-color: rgba(0,0,0,.05);
+}
+
+/* -- checklist -- */
+section.checklist ul {
+	margin-top: 1.0em;
+}
+
+section.checklist li {
+	margin-top: 0.5em;
+}
+
+section.checklist li p:after {
+	content: "□";
+	float: right;
+	clear: right;
+	margin-left: 1.0em;
+	margin-right: 1.0em;
+}
+
+/* -- case-study -- */
+section.case-study {
+	border-bottom: 1.0em solid rgba(0,0,0,.30);
+	border-bottom-right-radius: 0.5em;
+	border-bottom-left-radius: 0.5em;
+	border-top: 1.0em solid rgba(0,0,0,.30);
+	border-top-right-radius: 0.5em;
+	border-top-left-radius: 0.5em;
+	margin: 2.0em 0 2.0em 0;
+	padding: 1.0em 0 1.0em 0;
+}
+
+section.case-study p {
+	font-family: "Lato", sans-serif;
+	font-size: 0.9em;
+}
+
+section.case-study h1.title {
+	font-size: 1.1em;
+	font-weight: normal;
+	margin-top: 0;
+}
+
+section.case-study p.subtitle {
+	font-size: 1.0em!important;
+}
+
+section.case-study h2.head-a {
+	font-size: 1.1em;
+	font-weight: normal;
+}
+
+/* -- questions -- */
+section.questions {
+	border-bottom: 0.5em solid rgba(0,0,0,.10);
+	border-top: 0.5em solid rgba(0,0,0,.10);
+	margin: 2.0em 0 2.0em 0;
+	padding: 1.0em 0 1.0em 0;
+}
+
+section.questions h1.title {
+	font-size: 1.2em;
+	text-transform: uppercase;	
+	margin-top: 0;
+}
+
+section.questions h2.head-a {
+	font-size: 1.0em;
+	text-transform: uppercase;
+}
+
+section.questions p {
+	font-family: "Lato", sans-serif;
+	font-size: 0.9em;
+}
+
+/* -- (chapter) review -- */
+section.review {
+	margin: 2.0em 0 2.0em 0;
+	padding: 1.0em 0 1.0em 0;
+	border-bottom: 0.75em solid rgba(0,0,0,.20);
+}
+
+section.review h1.title {
+	background-color: rgba(0,0,0,.20);
+	font-size: 1.5em;	
+	padding: 0.67em;	/* = 1rem */
+	text-transform: uppercase;
+}
+
+section.review p.subtitle {
+	background-color: rgba(0,0,0,.20);
+	padding: 0 0 0.33em 0.67em;
+	font-size: 1.3em!important;	
+}
+
+section.review h2.head-a {
+	font-size: 1.3em;
+}
+
+section.review ul.list p {
+	padding-left: 2.0em;
+	text-indent: -2.0em;
+}
+
+section.review ul.list .strong {
+	font-family: "Lato", sans-serif;
+}
+
